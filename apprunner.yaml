@@ -6,6 +6,6 @@ build:
       - pip install -r requirements.txt # install dependencies
 
 run:
-  command: uvicorn main:app --reload
+  command: fastapi run main.py
   network:
     port: 8000 # port AppRunner will expose
