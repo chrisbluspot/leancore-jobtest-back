@@ -1,0 +1,11 @@
+version: 1.0 # version of the specification
+runtime: python3 # runtime to use
+build:
+  commands:
+    build:
+      - pip install -r requirements.txt # install dependencies
+
+run:
+  command: uvicorn main:app --reload
+  network:
+    port: 8000 # port AppRunner will expose
